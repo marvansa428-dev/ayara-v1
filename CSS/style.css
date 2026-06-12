@@ -10,20 +10,19 @@
 .chevron{
     width: 10px;
     height: 10px; 
-    background-color: white;
 }
 .menu-humberger{
     display: flex;
     position: relative;
     display: inline-block;
 }
-.menu-icon{
-    background-color: white;
+.menu-icon{ 
     border: none;
     cursor:pointer;
     padding: 10px;
 }
 .menu-cours{
+    display: flex;
     display: none;
     position: absolute;
     top: 100%;
