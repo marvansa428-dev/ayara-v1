@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/inscription.css">
+    <title>AYARA - Inscription</title>
+</head>
+<body>
+    <!-- ==PANNEAU GAUCHE - MARQUE-->
+    <div class="marque">
+        <div class="marque-logo">
+            <img src="./src/assets/logo.jpeg" alt="logo AYARA" class="logo-icon">
+            <span>AYARA</span>
+        </div>
+
+        <div class="marque-content">
+            <h2>Le savoir n'a<br>pas <span>d'adresse.</span></h2>
+            <p>Rejoignez des miliers de Gabonais qui développent leurs compétences, progressent dans leur carrière et construisent leur avenir avec AYARA.</p>
+        </div>
+
+        <div class="marque-stats">
+            <div class="marque-stat">
+                <strong>+50</strong>
+                <span>Apprenants actifs</span>
+            </div>
+            <div class="marque-stat">
+                <strong>3</strong>
+                <span>Formations disponibles</span>
+            </div>
+            <div class="marque-stat">
+                <strong>9</strong>
+                <span>Provinces couvertes</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==PANNEAU DROIT - Formulaire==-->
+    <div class="formulaire-bloc">
+        <div class="formulaire-box">
+
+            <h1>Créer mon compte</h1>
+            <p>Commencez gratuitement - aucune carte requise.</p>
+
+            <!--==Onglets-Tabs==-->
+            <div class="tabs">
+                <button type="button" class="tab-btn" onclick="switchTab('mail')"> Adresse e-mail</button>
+                <button type="button" class="tab-btn active" onclick="switchTab('tel')">Numéro de téléphone</button>
+            </div>
+
+            <!--==Formulaire==-->
+            <form action="./dashboard.html">
+
+                <!--==Nom complet==-->
+                <div class="formulaire-group">
+                    <label for="nom">Nom complet</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex : Christ OBIANG" required>
+                </div>
+
+                <!--==Section Téléphone==-->
+                <div class="section-tel" id="section-tel">
+                    <div class="formulaire-group">
+                        <label for="telephone">Numéro de téléphone</label>
+                        <div class="phone-input">
+                            <div class="phone-prefix">
+                                <select name="indicatif" aria-label="Indicatif pays">
+                                    <option value="+241">GA +241</option>
+                                </select>
+                            </div>
+                            <input type="tel" id="telephone" name="telephone" placeholder="77516364">
+                        </div>
+                    </div>
+                </div>
+
+                <!--==Mot de passe==-->
+                <div class="formulaire-group">
+                    <label for="password">Mot de passe</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" placeholder="8 caractèeres minimum" required>
+                        <button type="button" class="toggle-password" onclick="togglePassword()" aria-label="Afficher le mot de passe">
+                            <!--Oeil ouvert (mdp visible)-->
+                            <svg id="icon-eye" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+
+                             <!-- Oeil barré (mot de passe masqué) -->
+                            <svg id="icon-eye-off" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="display:none">
+                                <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8
+                                 a18.45 18.45 0 0 1 5.06-5.94"/>
+                                <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8
+                                 a18.5 18.5 0 0 1-2.16 3.19"/>
+                                <line x1="1" y1="1" x2="23" y2="23"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!--==CGU==-->
+                <div class="cgu">
+                    <input type="checkbox" id="cgu" name="cgu" required>
+                    <label for="cgu">
+                        J'accepte les <a href="#">Conditions d'utilisations</a> et la <a href="#">Politique de confidentialité</a> d'AYARA.
+                    </label>
+                </div>
+
+                <!--==Bouton d'inscription==-->
+                <button type="submit" class="btn-submit">Créer mon compte</button>
+            </form>
+
+            <!-- ==Séparateur== -->
+            <div class="separator">
+                <hr><span>ou continuer avec</span><hr>
+            </div>
+            
+            <!--==Google==-->
+            <a href="#" class="btn-google">
+                <span class="google-icon">G</span>
+                Continuer avec Google
+            </a>
+
+            <!--==Lien de connexion==-->
+            <p class="login-link">
+                T'inquiètes, j'ai déjà un compte <a href="./dashboard.html">Se connecter</a>
+            </p>
+        </div>
+    </div>
+    <script src="./src/inscription.js"></script>
+</body>
+</html>

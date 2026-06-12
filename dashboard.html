@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYARA – Tableau de bord</title>
+  <link rel="stylesheet" href="./src/dashboard.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <nav>
+      <div class="logo-sidebar">
+        <img src="./src/assets/logo.jpeg" alt="Logo AYARA">
+        <span>AYARA</span>
+      </div>
+
+      <ul>
+        <li><a href="#" class="active">Tableau de bord</a></li>
+        <li><a href="#">Mes cours</a></li>
+        <li><a href="#">Catalogue</a></li>
+        <li><a href="https://chat.whatsapp.com/C9FwzPKrztwDSXgVS0ekup">Communauté</a></li>
+      </ul>
+
+      <div class="sidebar-bottom-nav">
+        <a href="#">Paramètres</a>
+        <a href="#" class="deconnexion">Déconnexion</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-right">
+      <img src="./src/assets/profile.jpeg" alt="Photo de profil" class="logo">
+    </div>
+  </header>
+
+  <!-- CONTENU PRINCIPAL -->
+  <main>
+
+    <!-- Bienvenue -->
+    <div class="Bienvenue">
+      <div>
+        <h1>Mbolo! Christ 👋</h1>
+        <p>Heureux de vous revoir. Vous avez fait d'excellents progrès cette semaine !</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <p>Cours en cours</p>
+        <h2>4</h2>
+      </div>
+      <div class="stat">
+        <p>Cours terminés</p>
+        <h2>12</h2>
+      </div>
+      <div class="stat">
+        <p>Certificats obtenus</p>
+        <h2>3</h2>
+      </div>
+    </div>
+
+    <!-- Grille principale : cours + panneau droit -->
+    <div class="dashboard-grid">
+
+      <!-- Mes Cours -->
+      <div class="mes-cours">
+        <div class="section-header">
+          <h2>Mes cours</h2>
+        </div>
+
+        <!-- Cours 1 -->
+        <div class="carte-cours">
+          <div class="carte-img">
+            <img src="./src/assets/cours1.jpg" alt="Developpement web">
+            <span class="badge">Niveau intermédiaire</span>
+          </div>
+          <div class="carte-contenu">
+            <h3>Developpement web:<br>Navigateur Web</h3>
+            <p>Par Marcelle OGOULA</p>
+            <div class="progress-label">
+              <span>Progression</span>
+              <span>65% complété</span>
+            </div>
+            <div class="conteneur-barre">
+              <div class="remplissage-barre" style="width: 65%;"></div>
+            </div>
+            <a href="#" class="btn">Continuer le cours →</a>
+          </div>
+        </div>
+
+        <!-- Cours 2 -->
+        <div class="carte-cours">
+          <div class="carte-img">
+            <img src="./src/assets/cours2.jpeg" alt="Referent Digital">
+            <span class="badge">Niveau intermédiaire</span>
+          </div>
+          <div class="carte-contenu">
+            <h3>Referent Digital :<br></h3>
+            <p>Par Serge MBA</p>
+            <div class="progress-label">
+              <span>Progression</span>
+              <span>32% complété</span>
+            </div>
+            <div class="conteneur-barre">
+              <div class="remplissage-barre" style="width: 32%;"></div>
+            </div>
+            <a href="#" class="btn">Continuer le cours →</a>
+          </div>
+        </div>
+
+        <!-- Cours 3 -->
+        <div class="carte-cours">
+          <div class="carte-img">
+            <img src="./src/assets/cours3.jpeg" alt="Digital Creator">
+            <span class="badge">Niveau intermédiaire</span>
+          </div>
+          <div class="carte-contenu">
+            <h3>Digital Creator:<br></h3>
+            <p>Par Amina BONGO</p>
+            <div class="progress-label">
+              <span>Progression</span>
+              <span>12% complété</span>
+            </div>
+            <div class="conteneur-barre">
+              <div class="remplissage-barre" style="width: 12%;"></div>
+            </div>
+            <a href="#" class="btn">Continuer le cours →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panneau droit -->
+      <div class="panneau-droit">
+
+        <!-- Carte Progression -->
+        <div class="progression-semaine">
+
+          <h2>Votre progression</h2>
+
+          <div class="objectif">
+            <p>Objectif hebdomadaire</p>
+            <span>75%</span>
+          </div>
+
+          <div class="conteneur-barre">
+            <div class="remplissage-barre" style="width:75%"></div>
+          </div>
+
+          <p>
+            Encore 2 leçons pour atteindre votre objectif.
+          </p>
+
+        </div>
+
+        <!-- Carte Communauté -->
+        <div class="communité">
+          <h2>Communauté</h2>
+          <p>Rejoignez le forum de discussion de votre promotion pour échanger avec d'autres apprenants et mentors.</p>
+          <div class="avatars">
+            <img src="./src/assets/avatar1.jpeg" alt="Membre 1">
+            <img src="./src/assets/avatar1.jpeg" alt="Membre 2">
+            <img src="./src/assets/avatar1.jpeg" alt="Membre 3">
+            <img src="./src/assets/avatar1.jpeg" alt="Membre 4">
+            <div class="plus">+42</div>
+          </div>
+          <a href="https://chat.whatsapp.com/C9FwzPKrztwDSXgVS0ekup" class="btn btn-outline">Accéder au forum</a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 AYARA. Tous droits réservés.</p>
+  </footer>
+
+  <script src="./src/dashboard.js"></script>
+</body>
+</html>
