@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ayara-v1</title>
+  <link rel="stylesheet" href="/CSS/global.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="commande-button">
+        <div class="logo">
+          <img src="./src/assets/IMG-20260611-WA0063_-_Copie[1].jpg" class="photo" alt="logo">
+        </div>
+        <div class="menu-humberger">
+          <div class="forma">Formations</div>
+          <button class="menu-icon"  id="menu-icon" aria-label="ouvrir le menu">
+            <img src="./src/assets/chevron-en-bas.png" class="chevron" alt="image">
+          </button>
+          <ul class="menu-cours" id="menu-cours">
+            <li><a href="./developpeur.html">Developpement web</a></li>
+            <li><a href="./digi-crea.html">Digital creator</a></li>
+            <li><a href="./referent.html">Référent digital</a></li>
+          </ul>
+        </div>
+        <div>formateurs</div>
+        <div>contacts</div>
+      </div>
+      <div class="space-button">
+        <button class="button-connect">Inscription</button>
+        <div id="InscriptionModal" class="modal">
+          <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Formulaire d'inscription</h2>
+          </div>
+        </div>
+        <button class="button-connect">connexion</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container-left">
+        <h1 id="titre">Le savoir n'a pas <span>d'adresse <span></h1>
+        <p class="text-presentation">Accedez à un programe innovant qui offre des formations certifiantes adaptées au
+          marché de l'emploi. <br>Ayara, c'est un choix adequate pour propulsez votre carrière. </p>
+        <div class="hero-button">
+          <button class="button-start">commencer gratuitement</button>
+          <button class="button-demo">voir la démo</button>
+        </div>
+      </div>
+      <div class="container-right">
+        <img src="./src/assets/IMG-20260611-WA0077[1].jpg" class="img-center" alt="image">
+      </div>
+    </section>
+    <section class="presentation">
+      <div class="introduction">
+        <h2 id="reason">Pourquoi choisir Ayara ?</h2>
+        <P>Ayara est une plate forme adaptée qui répond aux défits d'aujourd'hui <br>
+          pour vous offrir une meilleure expérience d'aprrentissage</P>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="./src/assets/connexion-aux-personnes.png" class="card-introduction" alt="logo">
+          <h3 class="entete">Accessibilité</h3>
+          <p>Apprenez partout, et à votre rythme. <br>Nos contenus sont optimisés pour une consultation fluide</p>
+        </div>
+        <div class="card">
+          <img src="./src/assets/personnaliser.png" class="card-introduction" alt="logo">
+          <h3 class="entete">Personnalisation</h3>
+          <p>Un parcours adapté à vos objectifs. <br>
+            Recevez des recommendations basées sur vos objectifs et votre niveau actuel. </p>
+        </div>
+        <div class="card">
+          <img src="./src/assets/emploi.png" class="card-introduction" alt="logo">
+          <h3 class="entete">Employabilité</h3>
+          <p>Notre programme repond aux besoins du marché gabonais,
+            <br>pour garantir que vous apprenez les compétences les plus recherchées.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Formations">
+      <h2 class="nos-formations">Nos Formations</h2>
+      <p>Explorez nos cours et commencer à transformer votre avenir</p>
+      <div class="blocs-formations">
+        <div class="bloc">
+          <img src="./src/assets/IMG-20260611-WA0078[1].jpg" class="photo-formation" alt="dev">
+          <h3>Developpement web</h3>
+        </div>
+        <div class="bloc">
+          <img src="./src/assets/IMG-20260611-WA0080[1].jpg" class="photo-formation" alt="digit">
+          <h3>Digital creator</h3>
+        </div>
+        <div class="bloc">
+          <img src="./src/assets/IMG-20260611-WA0081[1].jpg" class="photo-formation" alt="ref">
+          <h3>Référent Digital</h3>
+
+        </div>
+      </div>
+    </section>
+    <section class="Inscription">
+      <h2 id="franchir">Franchissez une nouvelle étape dans votre apprentissage</h2>
+      <p>Rejoinez d'autres apprenants qui ont déja chois AYARA pour augmenter leur compétences.</p>
+      <button class="inscrire">Inscrivez-vous maintenant</button>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-ontop">
+      <div class="ayara">
+        <div class="logo">
+          <img src="./src/assets/IMG-20260611-WA0063_-_Copie[1].jpg" class="photo" alt="logo">
+        </div>
+        <p>première plateforme gabonaise d'apprentissage en ligne <br>pour propulser votre carrière.</p>
+      </div>
+      <div class="plateforme">
+        <h4 class="plat">Plateforme</h4>
+        <div>Catalogue</div>
+        <div>Contact</div>
+        <div>Aide</div>
+      </div>
+    </div>
+    <div class="confidentialités">
+      <div>2026 AYARA, Tous droits réservés.</div>
+      <div>Confidentialité</div>
+      <div>Condition d'utilisation</div>
+    </div>
+  </footer>
+
+  <div id="app"></div>
+  
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
